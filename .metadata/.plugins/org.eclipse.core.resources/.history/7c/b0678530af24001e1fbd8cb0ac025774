@@ -1,0 +1,21 @@
+package samp;
+import java.util.*;
+public class no7 {
+	public static void main(String []args) {
+	Scanner scanner=new Scanner(System.in);
+	System.out.print("Enter a number:");
+	int num=scanner.nextInt();
+	while(num>0)
+	
+	{
+		int i=2;
+		if(num>=2 && num%2==1)
+			System.out.println("Prime");
+		
+		else (i<num)
+			System.out.println("not Prime");
+				
+	
+	}
+}
+}	
