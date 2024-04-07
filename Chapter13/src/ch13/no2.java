@@ -1,9 +1,9 @@
 package ch13;
 import java.util.*;
-class pet{
+class pet1{
 	String name;
 	String type;
-	public pet(String name,String type) {
+	public pet1(String name,String type) {
 		this.name=name;
 		this.type=type;
 	}
@@ -12,13 +12,13 @@ class pet{
 		System.out.println("The type is"+type);
 	}
 }
-class catty extends pet{
+class catty extends pet1{
 	char type='c';
 
 	public catty(String name,String type){
 	super(name,type);}
 }
-class dogy extends pet{
+class dogy extends pet1{
 	char type='d';
 	
 	
@@ -32,8 +32,8 @@ public class no2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
-		pet p;
-		ArrayList <pet> pe=new ArrayList <pet>();
+		pet1 p;
+		ArrayList <pet1> pe=new ArrayList <pet1>();
 		do {
 		System.out.println("Enter name for your pet or enter stop to exit :");
 		String name=s.nextLine();
@@ -61,7 +61,7 @@ public class no2 {
 		type=s.nextLine();
 		}while(true);
 		Collections.sort(pe,(o1,o2)-> o1.type.charAt(0) - o2.type.charAt(0));
-	for(pet pets:pe) {
+	for(pet1 pets:pe) {
 		System.out.println(pets.name+"\t"+pets.type);
 	}
 	}
